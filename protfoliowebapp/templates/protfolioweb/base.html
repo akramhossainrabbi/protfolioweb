@@ -5,9 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="{% static 'bower_components/jquery/jquery.min.js' %}" crossorigin="anonymous"></script>
-    <script src="{% static 'bower_components/typed.js/dist/typed.min.js' %}" charset="utf-8"></script>
-    <script src="{% static 'bower_components/jqcloud2/dist/jqcloud.min.js' %}" charset="utf-8"></script>
+    <link rel="shortcut icon" href="{%  static 'assets\img\favicon.ico' %}">
     <link rel="stylesheet" href="{% static 'bower_components/jqcloud2/dist/jqcloud.min.css' %}">
 
     <!-- Bootstrap CSS -->
@@ -71,7 +69,7 @@
 
   <!--Page content Begin-->
   {% block content %}
-    
+
   {% endblock %}
   <!--Page content End-->
 
@@ -131,7 +129,7 @@
         <div class="row copyright mt-4">
           <div class="col-md-12 text-center">
             <p>
-              <small class="block">&copy; 2020 | All Rights Reserved.</small> 
+              <small class="block">&copy; 2020 | All Rights Reserved.</small>
               <small class="block">Powered by  coderfoxbd.com</small>
             </p>
           </div>
@@ -139,9 +137,12 @@
 
       </div>
     </footer>
+    <script src="{% static 'bower_components/jquery/jquery.min.js' %}" crossorigin="anonymous"></script>
+    <script src="{% static 'bower_components/typed.js/dist/typed.min.js' %}" charset="utf-8"></script>
+    <script src="{% static 'bower_components/jqcloud2/dist/jqcloud.min.js' %}" charset="utf-8"></script>
     <script src="{% static 'assets/scripts/app.js' %}" charset="utf-8"></script>
     {% block js %}
-    
+
     {% endblock js %}
     <script>
     function openNav() {

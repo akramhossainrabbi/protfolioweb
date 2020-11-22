@@ -58,10 +58,10 @@ html {
 /*Parallal img*/
 .parallax {
   /* The image used */
-  background-image: url("../img/myself.png");
+  background-image: url("/static/assets/img/myself.jpg");
 
   /* Set a specific height */
-  min-height: 500px; 
+  min-height: 500px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -174,47 +174,11 @@ html {
 }
 
 .experience-topics p {
-	color: #ACAEB2;
-	font-family: "Maven pro", sans-serif;
-	/*font-weight: 500;*/
-}
-
-.experience-topics ul li {
-	list-style: none;
 	color: #bbd2ff;
+	padding: 0;
+	margin: 0;
 	font-family: "Maven pro", sans-serif;
 	font-weight: 500;
-}
-
-/*** Experience ***/
-#experience {
-	background-color: #4c6d86;
-	padding: 6em 4em 5.6em;
-}
-
-#experience h2 {
-	color: #fff;
-	margin-bottom: .7em;
-}
-
-#experience .tag-line {
-	color: white;
-	font-size: 1.4em;
-}
-
-#experience i {
-	color: rgb(255, 138, 89);
-	font-size: 4em;
-}
-
-#experience h3 {
-	color: #fff;
-}
-
-.experience-topics p {
-	color: #ACAEB2;
-	font-family: "Maven pro", sans-serif;
-	/*font-weight: 500;*/
 }
 
 .experience-topics ul li {
@@ -371,7 +335,7 @@ html {
           box-shadow: none;
 }
 
-a:hover{ 
+a:hover{
    text-decoration: none;
 }
 
