@@ -1,0 +1,191 @@
+{% extends 'protfolioweb/base.html' %}
+{% block title %}Home{% endblock %}
+{% load static %}
+
+{% block content %}
+  <div class="parallax">
+    <div class="container">
+      <div class="center-div">
+        <div class="row">
+          <div class="col-md-8">
+            <section id="about">
+              <div class="details">
+                <h2>Hi, I'm AKRAM HOSSAIN. I...<br> <span id="writing-text"></span></h2>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="cta text-center">
+                    <a class="my-button cta-button expand form-button" href="mailto:akramhossainrabbi@yahoo.com">Get In Touch</a>
+                  </div>
+                </div>
+                <div class="col-sm-12">
+                  <div class="my-arrow-div text-center">
+                    <a href="https://github.com/coder-fox-bd"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="http://www.facebook.com/coderfoxbd"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/coderfoxbd/"><i class="fab fa-linkedin fa-2x"></i></i></a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <section id="experience">
+    <div class="">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="text-center">My Experience</h2>
+          <p class="text-center tag-line">Specialist in need. Generalist at heart.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-4 text-center experience-topics">
+          <i class="fas fa-laptop"></i>
+          <h3>Front-end</h3>
+          <ul>
+            <li>html(5)</li>
+            <li>css(3)</li>
+            <li>Javascript</li>
+            <li>Jquery</li>
+            <li>Bootstrap</li>
+            <li>React</li>
+            <li>Api | Ajax</li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-4 text-center experience-topics">
+          <i class="fas fa-server"></i>
+          <h3>Back-end</h3>
+          <ul>
+            <li>NPM</li>
+            <li>SQL</li>
+            <li>Mongo</li>
+            <li>Restful Web Services</li>
+            <li>Laravel | PHP</li>
+            <li>django | Python</li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-4 text-center experience-topics">
+          <i class="fas fa-star"></i>
+          <h3>Tools</h3>
+          <ul>
+            <li>Vim</li>
+            <li>Bower</li>
+            <li>Atom || PhpStorm || VSCode</li>
+            <li>Github && Bitbucket</li>
+            <li>SSH</li>
+            <li>Gulp</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="work">
+    <h2 class="text-center">Work</h2>
+    <div class="">
+      <p class="text-center tag-line">Here are few of my former clients.</p>
+    </div>
+
+
+    <div class="row work-row"> <!-- odd -->
+      <div class="col-sm-12 col-md-6">
+        <video class="work_video" loop="true" autoplay="autoplay" controls="controls" muted>
+          <source src="{% static 'assets/images/edumaster.mp4' %}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="details details-ftm">
+          <h3>Edumaster</h3>
+          <p class="platform">Web</p>
+          <p class="icons"><i class="fas fa-desktop"></i><i class="fas fa-tablet-alt"></i><i class="fas fa-mobile-alt"></i></p>
+          <p>EDUMASTER is a school management software which will help the administration of a school to collect, store, manage and analyze data, paving the way to paperless governance of the institution.</p>
+          <a class="my-button" target="_blank" href="https://onelimitedbd.com/edumaster-school-management-software/">Visit Website</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row work-row"> <!-- even -->
+      <div class="col-sm-12 col-md-6">
+        <div class="details details-ftm">
+          <h3>E-SPORTS BD</h3>
+          <p class="platform">Web</p>
+          <p class="icons"><i class="fas fa-desktop"></i><i class="fas fa-tablet-alt"></i><i class="fas fa-mobile-alt"></i></p>
+          <p>E-SPORTS BD is a e-sports company in Bangladesh. Where mobile gamers can
+          register for various kind of mobile game. And after playing game they get reward.</p>
+          <a class="my-button" target="_blank" href="http://www.e-sports.com.bd">Visit Website</a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 order-first order-md-last">
+        <img src="{% static 'assets/images/esportsbd.png' %}" alt="" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="row work-row"> <!-- odd -->
+      <div class="col-sm-12 col-md-6">
+        <img src="{% static 'assets/images/gazipurzp.png' %}" alt="" class="img-fluid">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="details details-ftm">
+          <h3>Gazipur Zila Parishad</h3>
+          <p class="platform">Web</p>
+          <p class="icons"><i class="fas fa-desktop"></i><i class="fas fa-tablet-alt"></i><i class="fas fa-mobile-alt"></i></p>
+          <p>This is a webapp for Gazipur zila parishad. Here they give notices, take application for tenders, take application for various training, pass tender, transfer files from one officer to
+          other and also print students certificate which is totally automated.</p>
+          <a class="my-button" target="_blank" href="http://www.zpgazipur.gov.bd/">Visit Website</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row work-row"> <!-- even -->
+      <div class="col-sm-12 col-md-6">
+        <div class="details details-ftm">
+          <h3>PlayForMoney</h3>
+          <p class="platform">Web</p>
+          <p class="icons"><i class="fas fa-desktop"></i><i class="fas fa-tablet-alt"></i><i class="fas fa-mobile-alt"></i></p>
+          <p>Playformoney is an esports web. Here they organize tournaments for gamers.
+          Gamers register for tournaments and play game with them.</p>
+          <a class="my-button" target="_blank" href="http://www.playformoney.net">Visit Website</a>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 order-first order-md-last">
+        <img src="{% static 'assets/images/playformoney.png' %}" alt="" class="img-fluid">
+      </div>
+    </div>
+  </section>
+
+  <section id="teaching">
+    <h2 class="text-center">Teaching</h2>
+    <div class="row">
+      <div class="col-md-12">
+        <p class="text-center tag-line">In the last couple of years, I've taught programming to hundreds of students both privately in person and remotely. Here are some of the domains I've helped students with...</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="teaching-domains">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer-cta">
+    <h2 class="text-center">Wanna work with me?</h2>
+    <p></p>
+    <div class="row text-center">
+      <div class="col-sm-12">
+        <p class="text-center">I'm currently available for work.</p>
+      </div>
+      <div class="col-sm-12" id="startButtonDiv">
+        <a class="my-button form-button" href="mailto:akramhossainrabbi@yahoo.com">Start Now</a>
+      </div>
+    </div>
+  </section>
+{% endblock %}
