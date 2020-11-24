@@ -1,0 +1,48 @@
+{% extends 'protfolioweb/base.html' %}
+{% block title %}Home{% endblock %}
+{% load static %}
+
+{% block content %}
+	<div class="content-main">
+		<div class="container pt-5">
+			<div class="row">
+				<div class="col-md-9">
+					<div class="card">
+						<div class="card-body">
+
+							<!-- video and comment -->
+							{% for tutorial in all_tutorials %}
+							<div class="card mb-5">
+							  <div class="card-body">
+							  	<h3 class="card-title mb-3">{{ tutorial.video_header }}</h3>
+								<div class="embed-responsive embed-responsive-16by9">
+				                    <iframe class="embed-responsive-item" src="{{ tutorial.video_url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				                    </iframe>
+			                  	</div>
+			        			<h6 class="mt-3">{{ tutorial.details }}</h6>
+							  </div>
+							  <div class="card-footer text-muted">
+							    <a href="#">Full Tutorial Playlist</a>
+							  </div>
+							</div>
+							{% endfor %}
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 panel">
+					<div>
+						<div class="panel_body">
+							{% for side_panel_blog in side_panel_blogs %}
+							<!-- panel header -->
+							<h5>{{ side_panel_blog.header }}</h5>
+							<!-- panel details -->
+							<p class="mt-3">{{ side_panel_blog.details }}</p>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endblock %}

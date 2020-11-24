@@ -461,3 +461,30 @@ a:hover{
   background: #F85A16;
   color: #fff;
 }
+
+/*Classess Section*/
+.panel{
+	min-height: 50rem;
+	background-color: #c7c7c7;
+}
+.panel_body{
+	padding: 30px;
+}
+
+/*Classess Section*/
+.panel{
+	min-height: 50rem;
+	background-color: #c7c7c7;
+}
+.panel_body{
+	padding: 30px;
+}
+
+.panel_body h5{
+	    color: #0a2338;
+	    font-size: 20px;
+}
+
+.panel_body p{
+	font-size: 18px;
+}

@@ -24,7 +24,7 @@ SECRET_KEY = '2p-najzy4s$vt^iuf28%bb++6nr3di7mqz1fq$zcj57o)(+1lc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['coderfoxbd.pythonanywhere.com']
+ALLOWED_HOSTS = ['coderfoxbd.pythonanywhere.com', 'localhost']
 
 
 # Application definition
