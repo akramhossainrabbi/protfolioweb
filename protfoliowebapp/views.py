@@ -26,3 +26,8 @@ class TutorialView(TemplateView):
 		tutorials_playlist = Playlist.objects.filter(pk=pk)
 		context = {'tutorials_playlist': tutorials_playlist}
 		return render(request, 'protfolioweb/tutorials.html', context)
+
+class ServiceView(TemplateView):
+   template_name = 'protfolioweb/services.html'
+
+    

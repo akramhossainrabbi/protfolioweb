@@ -1,0 +1,27 @@
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: auto;
+  margin: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.card-1 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.card h2 {
+	color: #FF6945;
+	margin-bottom: .7em;
+	text-transform: uppercase;
+}
+
+.card p {
+	color: #738182;
+	font-family: "Maven pro", sans-serif;
+	font-weight: 500;
+	font-size: 1.2em;
+	text-align: left;
+}
