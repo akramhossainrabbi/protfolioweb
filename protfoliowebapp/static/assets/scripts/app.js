@@ -1,4 +1,5 @@
-const Portfolio = function() {
+window.addEventListener('load', function () {
+  const Portfolio = function() {
 	function makeWords() {
 		var words = [
 			{
@@ -89,3 +90,4 @@ const Portfolio = function() {
 
 Portfolio.displayWordCloud();
 Portfolio.typeAnimation();
+})
