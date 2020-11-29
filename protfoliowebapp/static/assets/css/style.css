@@ -74,6 +74,8 @@ html {
 		background-attachment: fixed;
 		background-position-x: 75%;
 		background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 	}
 }
 
