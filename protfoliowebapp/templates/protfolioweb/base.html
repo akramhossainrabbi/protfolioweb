@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="{% static 'bower_components/jqcloud2/dist/jqcloud.min.css' %}">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'bower_components/fontawesome/css/all.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bower_components/bootstrap/bootstrap.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
     {% block css %}
 
@@ -36,7 +36,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/">About
+            <a class="nav-link" href="/">Home
                   <span class="sr-only">(current)</span>
                 </a>
           </li>
@@ -44,7 +44,7 @@
             <a class="nav-link" href="{% url 'protfolioweb:classes' %}">Classes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'protfolioweb:services' %}">Services<i class="fas fa-hammer"></i></a>
+            <a class="nav-link" href="{% url 'protfolioweb:services' %}">Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact<i class="fas fa-hammer"></i></a>
@@ -57,9 +57,9 @@
     </div>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">About<i class="fas fa-hammer"></i></a>
+      <a href="/">Home</a>
       <a href="{% url 'protfolioweb:classes' %}">Classes</a>
-      <a href="#">Clients<i class="fas fa-hammer"></i></a>
+      <a href="{% url 'protfolioweb:services' %}">Services</i></a>
       <a href="#">Contact<i class="fas fa-hammer"></i></a>
     </div>
   </nav>
