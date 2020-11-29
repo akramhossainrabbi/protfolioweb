@@ -1,4 +1,10 @@
 window.addEventListener('load', function () {
+	// Preloader
+	if ($('#preloader').length) {
+	  $('#preloader').delay(100).fadeOut('slow', function () {
+	    $(this).remove();
+	});
+	}
   const Portfolio = function() {
 	function makeWords() {
 		var words = [
