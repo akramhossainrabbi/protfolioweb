@@ -1,5 +1,11 @@
-$("#bg-img").ready(function(){
-    const Portfolio = function() {
+window.addEventListener('load', function () {
+	// Preloader
+	if ($('#preloader').length) {
+	  $('#preloader').delay(0).fadeOut('slow', function () {
+	    $(this).remove();
+	});
+	}
+  const Portfolio = function() {
 	function makeWords() {
 		var words = [
 			{
