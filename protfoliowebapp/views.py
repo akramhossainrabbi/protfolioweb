@@ -30,4 +30,6 @@ class TutorialView(TemplateView):
 class ServiceView(TemplateView):
    template_name = 'protfolioweb/services.html'
 
+class ContactView(TemplateView):
+   template_name = 'protfolioweb/contact.html'
     
