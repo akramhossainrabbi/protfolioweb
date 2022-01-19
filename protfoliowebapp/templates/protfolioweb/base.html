@@ -129,7 +129,7 @@
         <div class="row copyright mt-4">
           <div class="col-md-12 text-center">
             <p>
-              <small class="block">&copy; 2020 | All Rights Reserved.</small>
+              <small class="block">&copy; 2020-<span id="year"></span> | All Rights Reserved.</small>
               <small class="block">Powered by  coderfoxbd.pythonanywhere.com</small>
             </p>
           </div>
@@ -163,5 +163,8 @@
         })
       });
     </script> 
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
   </body>
 </html>
